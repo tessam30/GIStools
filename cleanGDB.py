@@ -1,6 +1,6 @@
 # Name: CleanGDB.py
 # Description: Clean-up geodatabase using loops to eliminate empty feature classes
-# Requirements: arcgisscripting, os, sys, string and arcpy toolboxes, no extensions needed
+# Requirements: sys, string and arcpy toolboxes, no extensions needed
 # Author: Tim Essam, GeoCenter
 
 #Import the modules needed to run the script
@@ -48,4 +48,4 @@ except:
 #print how many feature classes remain in gdb
 arcpy.AddMessage("Feature classes removed: " + str(deleteCount))
 arcpy.AddMessage("Feature classes preserved: " + str(keepCount))
-arcpy.AddMessage('\nContact tessam@usaid.gov with any comments or information related to this tool.\n')
+arcpy.AddMessage('\nContact tessam[at]usaid.gov with any comments or information related to this tool.\n')
